@@ -1,0 +1,133 @@
+//====================================================================================================
+.footer {
+    &__container {
+        font-weight: 500;
+        font-size: rem(18); 
+        @include adaptiveValue("font-size", 18, 16);
+        stroke-linejoin: 125%;
+        color: #5E6282;
+    }
+    &__upper {
+        display:flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        @include adaptiveValue("margin-bottom", 84,30 );
+        flex-wrap: wrap;
+        gap: rem(20);
+    }
+    &__col {
+        padding: rem(0) rem(10);
+        @media (max-width:$mobile){
+             &:first-child{
+                flex: 1 1 100%;
+                text-align: center;
+             }
+             &:last-child{
+                flex: 1 1 100%;
+             }
+        }
+    }
+    &__logo {
+        margin-bottom: rem(18);
+        img{
+            max-width: 100%;
+        }
+    }
+    &__desc {
+        font-weight: 500;
+        font-size: rem(13);
+        line-height: 124%;
+        max-width: rem(207);
+        @media (max-width:$mobile){
+             margin: 0 auto; 
+        }
+    }
+    &__item {
+        span{
+            display: block;
+            font-weight: 700;
+            font-size: rem(21);
+            @include adaptiveValue("font-size", 21, 19);
+            line-height: 125%;
+            color: #080809;
+            margin-bottom: rem(32);
+        }
+    }
+    &__link {
+        display: block;
+        margin-bottom: rem(12);
+        @media (any-hover: hover){
+            &:hover{
+                text-decoration: underline;
+                transition: all 0.3s ease 0s;
+            }
+        }
+    }
+    &__rights {
+        text-align: center;
+        margin-bottom: rem(79);
+        @include adaptiveValue("margin-bottom",79 , 39);
+    }
+    &__rights-link {
+        @media (any-hover: hover){
+            &:hover{
+                text-decoration: underline;
+                transition: all 0.3s ease 0s;
+            }
+        }
+    }
+}
+.social-footer {
+    &__links {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: rem(26);
+    }
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #FFFFFF;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+        font-size: rem(16);
+        border-radius: 50%;
+        width: rem(41);
+        height: rem(41);
+        transition: all 0.3s ease 0s;
+        &:not(:last-child) {
+            margin-right: rem(25);
+        }
+        @media (any-hover: hover){
+            &:hover{
+                background: conic-gradient(from 180deg at 50% 50%, #B8D2F1 0deg, #F289AA 60deg, #C68BF0 106.09deg, #D164DA 153.75deg, #C963E8 221.25deg, #BFC2E8 258.75deg, #FFC999 288.75deg, #D0D8C9 315deg, #BAD0F1 334.13deg, #CED8CB 358.97deg, rgba(255, 255, 255, 0) 360deg);
+                box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); 
+                color: $mainColor;
+            }
+        }
+    }
+    &__discover{
+        margin-bottom: rem(16);
+    }
+    &__apps {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: rem(0) rem(-8);
+    }
+    &__app-link {
+        padding: rem(0) rem(8);
+        @media (any-hover: hover){
+            &:hover{
+                img{
+                    transform: scale(1.3);
+                } 
+            }
+        }
+        img{
+            transition: all 0.3s ease 0s;
+            max-width: 100%;
+        } 
+    }
+}
+//====================================================================================================
