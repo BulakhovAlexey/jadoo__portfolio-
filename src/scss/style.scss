@@ -64,6 +64,23 @@ $responsiveType: 1;
 // сайт загружен!
 html {
 	&.loaded {
+		.description-start{
+			&__sub-title{
+				animation: showText 0.6s linear forwards 0.2s;
+			}
+			&__title{
+				animation: showText 0.6s linear forwards 0.6s;
+			}
+        	&__text{
+				animation: showText 0.6s linear forwards 1s;
+			}
+			&__button{
+				animation: showText 0.3s linear forwards 1.2s;
+			}
+			&__youTube-link{
+				animation: showText 0.3s linear forwards 1.2s;
+			}
+		}
 		.className{}   // имя класса для которого ловим onLoad
 	}
 	&.touch{

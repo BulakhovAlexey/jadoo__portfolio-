@@ -56,10 +56,10 @@ function initSliders() {
         319: {
           creativeEffect: {
             prev: {
-              translate: ["100%", 0, 0],
+              translate: ["-100%", 0, 0],
             },
             next: {
-              translate: ["-100%", 0, 0],
+              translate: ["100%", 0, 0],
             },
           },
         },

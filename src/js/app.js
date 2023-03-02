@@ -17,13 +17,24 @@ flsFunctions.isWebp()
 flsFunctions.addTouchClass()
 
 /* Добавление loaded для HTML После полной загрузки страницы */
-// flsFunctions.addLoadedClass();
+flsFunctions.addLoadedClass()
 
 /* Модуль для работы с меню (Бургер) */
 flsFunctions.menuInit()
 
 // Добавление BG у хедера при скроле, добавляет к header класс showBg
-//flsFunctions.addBgToHeader();
+flsFunctions.addBgToHeader()
+
+// Гладкая навигация на странице
+// Документація: https://template.fls.guru/template-docs/modul-plavnoj-navigacii-po-stranice.html
+flsScroll.pageNavigation()
+
+// Функциональность добавляет классы в заголовок во время прокрутки
+// Документація: https://template.fls.guru/template-docs/modul-dobavleniya-klassov-k-shapke-pri-prokrutke-stranicy.html
+flsScroll.headerScroll()
+
+// Функціонал липкого блоку
+// flsScroll.stickyBlock();
 
 // учет высоты адресной строки для блоков 100VH on mobile
 // CSS: к элементу которому нужно задать 100VH помимо height: 100% задать height: calc(var(--vh, 1vh) * 100);
@@ -195,17 +206,6 @@ import "./libs/watcher.js"
 
 // Функции работы с взломщиком
 import * as flsScroll from "./files/scroll/scroll.js"
-
-// Гладкая навигация на странице
-// Документація: https://template.fls.guru/template-docs/modul-plavnoj-navigacii-po-stranice.html
-//flsScroll.pageNavigation();
-
-// Функциональность добавляет классы в заголовок во время прокрутки
-// Документація: https://template.fls.guru/template-docs/modul-dobavleniya-klassov-k-shapke-pri-prokrutke-stranicy.html
-//flsScroll.headerScroll();
-
-// Функціонал липкого блоку
-// flsScroll.stickyBlock();
 
 // Модуль цифровой встречной анимации
 // Документація: https://template.fls.guru/template-docs/modul-animacii-cifrovogo-lichilnika.html

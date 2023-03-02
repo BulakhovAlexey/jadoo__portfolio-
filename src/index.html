@@ -8,17 +8,19 @@
         <section class="page__start start">
           <div class="start__container">
             <div class="start__description description-start">
-              <h3 class="description-start__sub-title">
-                Best destinations around the world
-              </h3>
-              <h1 class="description-start__stitle">
-                Travel, <span>enjoy</span> and live a new and full life
-              </h1>
-              <p class="description-start__text">
-                Built Wicket longer admire do barton vanity itself do in it.
-                Preferred to sportsmen it engrossed listening. Park gate sell
-                they west hard for the.
-              </p>
+              <div class="description-start__wrap">
+                <h3 class="description-start__sub-title">
+                  Best destinations around the world
+                </h3>
+                <h1 class="description-start__title">
+                  Travel, <span>enjoy</span> and live a new and full life
+                </h1>
+                <p class="description-start__text">
+                  Built Wicket longer admire do barton vanity itself do in it.
+                  Preferred to sportsmen it engrossed listening. Park gate sell
+                  they west hard for the.
+                </p>
+              </div>
               <div class="description-start__links">
                 <a href="#" class="description-start__button">Find out more</a>
                 <button
@@ -31,7 +33,7 @@
                 </button>
               </div>
             </div>
-            <div class="start__image">
+            <div data-watch data-watch-once class="start__image">
               <img src="@img/traveler1.png" alt="image" />
             </div>
           </div>
@@ -174,7 +176,11 @@
                 </div>
               </div>
             </div>
-            <div class="book__ongoing ongoing-book">
+            <div
+              data-watch
+              data-watch-threshold="0.3"
+              class="book__ongoing ongoing-book"
+            >
               <div class="ongoing-book__blur-bg"></div>
               <div class="ongoing-book__item item-trip">
                 <div class="item-trip__image">
@@ -198,7 +204,7 @@
             </div>
             <div class="book__next-trip next-trip">
               <div class="next-trip__image">
-                <img src="@img/nexTrip.png" alt="trip" />
+                <img src="@img/nextTrip.png" alt="trip" />
               </div>
               <div class="next-trip__content">
                 <p class="next-trip__ongoing">Ongoing</p>
@@ -318,14 +324,14 @@
               </div>
               <form
                 class="subscribe__form"
-                action="files/sendmail/sendmail.php"
+                action="phpmailer/sendphp.php"
                 method="post"
               >
                 <input
                   data-required="email"
                   data-validate
                   type="text"
-                  name="form[email]"
+                  name="email"
                   data-error="Неверно введен Email"
                   placeholder="Your email"
                   class="subscribe__input input _icon-message"
@@ -359,6 +365,6 @@
       src="https://kit.fontawesome.com/9ca418d431.js"
       crossorigin="anonymous"
     ></script> -->
-    @@include('html/_js.htm',{})
+    @@include('html/_preloader.htm',{}) @@include('html/_js.htm',{})
   </body>
 </html>
